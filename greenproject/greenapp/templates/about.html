@@ -1,0 +1,96 @@
+{% load static %}
+
+{% include 'nav.html' %}
+
+<section class="news-detail-header-section text-center">
+    <div class="section-overlay"></div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12">
+                <h1 class="text-white">About Us</h1>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section-padding section-bg" id="section_2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                <img src="{%static 'images/sect.jpg'%}" class="custom-text-box-image img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="custom-text-box">
+                    <h2 class="mb-2">Our Vision</h2>
+
+                    <h5 class="mb-3">To Structure a Better Society</h5>
+
+                    <p class="mb-0">Our Society is engraved with several menace that tends to mere its given structure, we saw this loopholes in Leadership,Health/Lifestyles, Environment and decided to come in and advocate for its(society) betterment </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="custom-text-box mb-lg-0">
+                            <h5 class="mb-3">Our Mission</h5>
+
+                            <p>To inform and educate the populance via advocacy for</p>
+
+                            <ul class="custom-list mt-2">
+                                <li class="custom-list-item d-flex">
+                                    <i class="bi-check custom-text-box-icon me-2"></i>
+                                    Peace
+                                </li>
+
+                                <li class="custom-list-item d-flex">
+                                    <i class="bi-check custom-text-box-icon me-2"></i>
+                                    Healthy lifestyles
+                                </li>
+                                <li class="custom-list-item d-flex">
+                                    <i class="bi-check custom-text-box-icon me-2"></i>
+                                    Good Leadership
+                                </li>
+                                <li class="custom-list-item d-flex">
+                                    <i class="bi-check custom-text-box-icon me-2"></i>
+                                    Environmental Protection
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
+                            <div class="counter-thumb"> 
+                                <div class="d-flex">
+                                    <span class="counter-number" data-from="1" data-to="2018" data-speed="1000"></span>
+                                    <span class="counter-number-text"></span>
+                                </div>
+
+                                <span class="counter-text">Founded</span>
+                            </div> 
+
+                            <div class="counter-thumb mt-4"> 
+                                <div class="d-flex">
+                                    <span class="counter-number" data-from="1" data-to="120" data-speed="1000"></span>
+                                    <span class="counter-number-text">B</span>
+                                </div>
+
+                                <span class="counter-text">Donations</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<h1> {{user.email}} </h1>
+<h2> {{request.user.email}} </h2>
+{% include 'footer.html' %}
+
+

@@ -1,0 +1,162 @@
+{%load static%}
+
+{%include 'nav.html' %}
+<style>
+.news-section{
+
+
+}
+</style>
+
+<!-- <section>
+    <div class="container">
+        <div class="news-block-top">
+        {% if news.photo  %}
+        <img src="{{news.photo.url}}" class="news-image img-fluid" alt="">
+       
+        {% endif %}
+    </div>
+        <div class="news-block-date">
+            <p>
+                <i class="bi-calendar4 custom-icon me-1"></i>
+                {{news.date}}
+            </p>
+        </div>
+        <div class="news-block-author mx-5">
+            <p>
+                <i class="bi-person custom-icon me-1"></i>
+                By {{news.author}}
+            </p>
+        </div>
+
+    </div>
+</section> -->
+
+<section class="news-section section-padding">
+    <div class="container">
+
+        
+<div class="col-lg-7 col-12">
+
+   
+    <div class="news-block">
+        <div class="news-block-top">
+            
+            <!-- <a href="news-detail.html"> -->
+                <!-- <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg" class="news-image img-fluid" alt="">
+                 -->
+                 {% if news.photo  %}
+                 <img src="{{news.photo.url}}" class="news-image img-fluid" alt="">
+                
+                 {% endif %}
+            <!-- </a> -->
+           
+            <div class="news-category-block">
+                <a href="#" class="category-block-link">
+                    Lifestyle,
+                </a>
+
+                <a href="#" class="category-block-link">
+                    Clothing Donation
+                </a>
+            </div>
+        </div>
+      
+        <div class="news-block-info">
+            <div class="d-flex mt-2">
+                <div class="news-block-date">
+                    <p>
+                        <i class="bi-calendar4 custom-icon me-1"></i>
+                        {{news.date}}
+                    </p>
+                </div>
+
+                <div class="news-block-author mx-5">
+                    <p>
+                        <i class="bi-person custom-icon me-1"></i>
+                        By {{news.author}}
+                    </p>
+                </div>
+
+                <div class="news-block-comment">
+                    <p>
+                        <i class="bi-chat-left custom-icon me-1"></i>
+                        32 Comments
+                    </p>
+                </div>
+            </div>
+
+            <div class="news-block-title mb-2">
+                <h4><a href="news-detail.html" class="news-block-title-link">{{news.title}}</a></h4>
+            </div>
+
+            <div class="news-block-body">
+                <p>{{news.post|safe}}</p>
+            </div>
+        </div>
+    </div>
+     
+
+
+<!-- 
+    <div class="news-block mt-3">
+        <div class="news-block-top">
+            <a href="news-detail.html">
+                <img src="https://www.nairaland.com/attachments/17400363_images27_jpeg_jpegb5eabb30420736a23f477ffa913ada0a" alt="" srcset="">
+            </a>
+
+            <div class="news-category-block">
+                <a href="#" class="category-block-link">
+                    Food,
+                </a>
+
+                <a href="#" class="category-block-link">
+                    Donation,
+                </a>
+
+                <a href="#" class="category-block-link">
+                    Caring
+                </a>
+            </div>
+        </div>
+
+        <div class="news-block-info">
+            <div class="d-flex mt-2">
+                <div class="news-block-date">
+                    <p>
+                        <i class="bi-calendar4 custom-icon me-1"></i>
+                        October 12, 2036
+                    </p>
+                </div>
+
+                <div class="news-block-author mx-5">
+                    <p>
+                        <i class="bi-person custom-icon me-1"></i>
+                        By Admin
+                    </p>
+                </div>
+
+                <div class="news-block-comment">
+                    <p>
+                        <i class="bi-chat-left custom-icon me-1"></i>
+                        35 Comments
+                    </p>
+                </div>
+            </div>
+
+            <div class="news-block-title mb-2">
+                <h4><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h4>
+            </div>
+
+            <div class="news-block-body">
+                <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please <a href="https://templatemo.com/contact" target="_blank">contact TemplateMo</a> for more information.</p>
+            </div>
+        </div>
+    </div> -->
+</div>
+    </div>
+</section>
+
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,15 @@
+
+
+
+{% if searched %}
+
+<h1>you haved searched for  {{searched}} </h1>
+
+{%for searches in searches %}
+<a href=" {% url 'result' searches.id %} "><h1>{{searches}}</h1></a>
+
+
+{%endfor%}
+{%else%}
+<h1>you serched canst be found</h1>
+{%endif%}

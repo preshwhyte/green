@@ -1,0 +1,153 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Act smart and Green Community Foundation</title>
+
+        <!-- CSS FILES -->        
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{%static 'css/templatemo-kind-heart-charity.css' %}" rel="stylesheet">
+<!--
+
+TemplateMo 581 Kind Heart Charity
+
+https://templatemo.com/tm-581-kind-heart-charity
+
+-->
+
+    </head>
+ 
+    
+    <body id="section_1">
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-geo-alt me-2"></i>
+                            35 Lifeforte Street, Iwofe, Port Harocurt.
+                        </p>
+
+                        <p class="d-flex mb-0">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:asgcfoundation@gmail.com">
+                                asgcfoundation@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="https://twitter.com/offical_asgi" target="_blank" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://web.facebook.com/ASGInternationalq" target="_blank" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/asg_cf/" target="_blank" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://youtube.com/@ASGCF?si=ozI6FdvcdNv09L_o" target="_blank" class="social-icon-link bi-youtube"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" target="_blank" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="{%url 'home' %}">
+                    <img src="{%static 'images/logo3.png'%}" class="logo img-fluid" alt="" style="width:40px ;height: 40px;">
+                    <span>
+                        ACT SMART & GREEN
+                        <small>Community Foundation</small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="{%url 'home' %}">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- <a class="nav-link click-scroll" href="#section_2">About</a> -->
+                            <a class="nav-link " href="{% url 'about' %}">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- <a class="nav-link click-scroll" href="#section_3">Causes</a> -->
+                            <a class="nav-link" href="{% url 'causes' %}">Causes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="{%url 'home' %}">Volunteer</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a> -->
+                            <a class="nav-link " href="{%url 'news' %}" >News/Events</a>
+<!--                             
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{%url 'news' %}">News Listing</a></li>
+
+                                <li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
+                            </ul> -->
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- <a class="nav-link click-scroll" href="{% url 'contact' %}">Contact</a> -->
+                            <a class="nav-link " href="{% url 'contact' %}">Contact</a>
+                        </li>
+
+                        <li class="nav-item ms-3">
+                            <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+                                <!-- <div>
+                                  Your order is ₦3,400
+                                </div> -->
+                                <input type="hidden" name="public_key" value="FLWPUBK-9194d8a7722162c83f12e8460aeb39d2-X" />
+                                <input type="hidden" name="customer[email]" value="jessepinkman@walterwhite.org" />
+                                <input type="hidden" name="customer[name]" value="Jesse Pinkman" />
+                                <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+                                <!-- <input type="hidden" name="amount" value="{{property.price}}" /> -->
+                                <input type="hidden" name="amount" value="200" />
+                                <input type="hidden" name="currency" value="NGN" />
+                                <input type="hidden" name="meta[token]" value="54" />
+                                <input type="hidden" name="redirect_url" value="https://google.com" />
+                                <a class="nav-link custom-btn custom-border-btn btn " href=""> <button class="paybtn" type="submit" id="start-payment-button">Donate</button></a>
+                              </form>
+                            <!-- <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+       
+        

@@ -1,0 +1,72 @@
+<!-- 
+<h2>{{news.date}}</h2>
+<h1> {{news.title}} </h1> -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-7 col-12">
+<a href="{% url 'newsdetail' news.id %} ">
+    <div class="news-block">
+        <div class="news-block-top">
+            
+            <!-- <a href="news-detail.html"> -->
+                <!-- <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg" class="news-image img-fluid" alt="">
+                 -->
+                 {% if news.photo  %}
+                 <img src="{{news.photo.url}}" class="news-image img-fluid" alt="">
+                
+                 {% endif %}
+            <!-- </a> -->
+           
+            <div class="news-category-block">
+                <a href="#" class="category-block-link">
+                    Lifestyle,
+                </a>
+
+                <a href="#" class="category-block-link">
+                    Clothing Donation
+                </a>
+            </div>
+        </div>
+      
+        <div class="news-block-info">
+            <div class="d-flex mt-2">
+                <div class="news-block-date">
+                    <p>
+                        <small>
+                        <i class="bi-calendar4 custom-icon me-1"></i>
+                        {{news.date}}
+                    </small>
+                    </p>
+                </div>
+
+                <div class="news-block-author mx-5">
+                    <p>
+                        <small> <i class="bi-person custom-icon me-1"></i>
+                        {{news.author}}</small>
+                    </p>
+                </div>
+
+                <div class="news-block-comment">
+                    <p>
+                        <!-- <i class="bi-chat-left custom-icon me-1"></i> -->
+                        <small></small>
+                    </p>
+                </div>
+            </div>
+
+            <div class="news-block-title mb-2">
+                <h4><a href="" class="news-block-title-link">{{news.title}} </a></h4>
+                   
+            </div>
+
+            <div class="news-block-body">
+                <p class="long-text">{{news.post|safe}}</p>
+            </div>
+        </div>
+    </div>
+     </a>
+     <p><a href="{% url 'newsdetail' news.id %} ">see more...</a></p>
+    </div>
+</div>
+</div>

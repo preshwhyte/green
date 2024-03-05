@@ -1,0 +1,213 @@
+{%load static%}
+
+{%include 'nav.html' %}
+
+<section class="section-padding" id="section_3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12 text-center mb-4">
+                <h2>Our Causes</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                <div class="custom-block-wrap">
+                    <img src="{%static 'images/causes/environ.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+                    <div class="custom-block">
+                        <div class="custom-block-body">
+                            <h5 class="mb-3">Environmental Protection</h5>
+
+                            <p>To advocate against climate degradation activities, pollution and so on <a href="{% url 'environ' %}"> ...see more</a></p>
+<!-- 
+                            <div class="progress mt-4">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="d-flex align-items-center my-2">
+                                <p class="mb-0">
+                                    <strong>Raised:</strong>
+                                    $18,500
+                                </p>
+
+                                <p class="ms-auto mb-0">
+                                    <strong>Goal:</strong>
+                                    $32,000
+                                </p>
+                            </div> -->
+                        </div>
+
+                        <a href="" class="custom-btn btn">Call to Action</a>
+                    </div>
+                </div>
+                <span style="margin: 100px;"> </span>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                <div class="custom-block-wrap">
+                    <img src="{%static 'images/causes/health.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+                    <div class="custom-block">
+                        <div class="custom-block-body">
+                            <h5 class="mb-3">Healthy Lifestyles</h5>
+
+                            <p>Promoting Healthy Lifestyles through public health advocacies and robust outreaches <a href="{% url 'health' %}"> ...see more</a></p>
+
+                            <!-- <div class="progress mt-4">
+                                <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="d-flex align-items-center my-2">
+                                <p class="mb-0">
+                                    <strong>Raised:</strong>
+                                    $27,600
+                                </p>
+
+                                <p class="ms-auto mb-0">
+                                    <strong>Goal:</strong>
+                                    $60,000
+                                </p>
+                            </div> -->
+                        </div>
+
+                        <a href="" class="custom-btn btn">Call to Action</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="custom-block-wrap">
+                    <img src="{%static 'images/causes/ceo.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+                    <div class="custom-block">
+                        <div class="custom-block-body">
+                            <h5 class="mb-3">Good Leadership</h5>
+
+                            <p>Continues advocacies for a better Leadership system in our society <a href="{% url 'leader' %}"> ...see more</a></p>
+
+                            <!-- <div class="progress mt-4">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="d-flex align-items-center my-2">
+                                <p class="mb-0">
+                                    <strong>Raised:</strong>
+                                    $84,600
+                                </p>
+
+                                <p class="ms-auto mb-0">
+                                    <strong>Goal:</strong>
+                                    $100,000
+                                </p>
+                            </div> -->
+                        </div>
+
+                        <a href="" class="custom-btn btn">Call to Action</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- added to existed -->
+            
+<div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+    <div class="custom-block-wrap">
+        <img src="{%static 'images/causes/peace.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+        <div class="custom-block">
+            <div class="custom-block-body">
+                <h5 class="mb-3">Peace advocacies</h5>
+
+                <p>Peace is an essential element in any given society, hence its advocacy <a href="{% url 'peace' %}"> ...see more</a></p>
+<!-- 
+                <div class="progress mt-4">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="d-flex align-items-center my-2">
+                    <p class="mb-0">
+                        <strong>Raised:</strong>
+                        $18,500
+                    </p>
+
+                    <p class="ms-auto mb-0">
+                        <strong>Goal:</strong>
+                        $32,000
+                    </p>
+                </div> -->
+            </div>
+
+            <a href="" class="custom-btn btn">Call to Action</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+    <div class="custom-block-wrap">
+        <img src="{%static 'images/causes/smart.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+        <div class="custom-block">
+            <div class="custom-block-body">
+                <h5 class="mb-3">Smart Initiatives</h5>
+
+                <p>We're also involved in advancing the society through information communucation technologies<a href="{% url 'smart' %}"> ...see more</a></p>
+<!-- 
+                <div class="progress mt-4">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="d-flex align-items-center my-2">
+                    <p class="mb-0">
+                        <strong>Raised:</strong>
+                        $18,500
+                    </p>
+
+                    <p class="ms-auto mb-0">
+                        <strong>Goal:</strong>
+                        $32,000
+                    </p>
+                </div> -->
+            </div>
+
+            <a href="" class="custom-btn btn">Call to Action</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+    <div class="custom-block-wrap">
+        <img src="{%static 'images/causes/other.jpg'%}" class="custom-block-image img-fluid" alt="">
+
+        <div class="custom-block">
+            <div class="custom-block-body">
+                <h5 class="mb-3">Other activities</h5>
+
+                <p>Volunteering, outreaches, charities and other society building activites in our commitment to structure the society<a href="{% url 'others' %}"> ...see more</a></p>
+<!-- 
+                <div class="progress mt-4">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="d-flex align-items-center my-2">
+                    <p class="mb-0">
+                        <strong>Raised:</strong>
+                        $18,500
+                    </p>
+
+                    <p class="ms-auto mb-0">
+                        <strong>Goal:</strong>
+                        $32,000
+                    </p>
+                </div> -->
+            </div>
+
+            <a href="" class="custom-btn btn">Call to Action</a>
+        </div>
+    </div>
+</div>
+
+<!-- added ended -->
+
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
