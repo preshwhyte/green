@@ -150,11 +150,3 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
     # "allauth.account.auth_backends.AuthenticationBackend",
 # )
 
-EMAIL_HOST= 'smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER='omnipresh2@gmail.com'
-EMAIL_HOST_PASSWORD='lqgeemotedtnzpka'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-# lqge emot edtn zpka
